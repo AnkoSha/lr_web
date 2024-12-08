@@ -1,0 +1,281 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #ffffff);
+    color: #666;
+}
+
+/* Навбар */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #046c58;
+    padding: 10px 20px;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Список меню */
+.custom-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar li {
+    margin-left: 15px;
+}
+
+.custom-navbar a {
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar a:hover {
+    background: #fff;
+    color: #046c58;
+}
+
+main {
+    display: block;
+}
+
+.center-section {
+    text-align: center;
+    background: #fff;
+    padding: 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+
+
+        .center-section img {
+            width: 100px;
+            height: 100px;
+            padding-bottom: 20px;
+            border-radius: 50%; /* Картинка с кругом */
+        }
+
+        .center-section .shape {
+            width: 70px;
+            height: 70px;
+            background: #046c58;
+            border-radius: 50%;
+            position: absolute;
+            top: -35px;
+            right: -35px;
+            z-index: -1;
+        }
+
+        .center-section h1 {
+            font-family: 'Righteous', cursive;
+            font-size: 24px;
+            color: #333;
+            padding-bottom: 20px;
+        }
+
+        .center-section p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            padding-bottom: 30px;
+        }
+
+        .center-section .btn {
+            padding: 10px 20px;
+            background: #046c58;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .center-section .btn:hover {
+            background: #000;
+            color: #fff;
+            padding-bottom: 60 px;
+        }
+
+        /* Футер */
+        .footer {
+            width: 100%;
+            background: #046c58;
+            padding: 15px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer a:hover {
+            color: #eaeaea;
+        }
+
+        .center-section .square {
+            width: 50px;
+            height: 50px;
+            background: #FF5733;
+            position: absolute;
+            left: -25px;
+            bottom: -25px;
+            transform: rotate(45deg); /* Поворачиваем квадрат */
+            z-index: -2;
+        }
+
+        /* Новая фигура - трапеция */
+        .center-section .trapezoid {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 70px solid #FFD700; /* Цвет трапеции */
+            z-index: -1;
+        }
+.section{
+    padding: 50px;
+    margin-top: 40px !important;
+}
+.about-section {
+            text-align: center;
+            background: #fff;
+            padding: 60px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h1 {
+            font-family: 'Righteous', cursive;
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+
+        .about-section .btn {
+            padding: 10px 20px;
+            background: #046c58;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .about-section .btn:hover {
+            background: #000;
+        }
+/* Секция формы */
+.form-section {
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto; /* Центрирование формы */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Заголовок формы */
+.form-section h1 {
+    font-size: 20px;
+    color: #046c58;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Форма */
+.compact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height:80%;
+}
+
+/* Поля ввода */
+.compact-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.compact-form input,
+.compact-form textarea,
+.compact-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px; /* Уменьшены отступы */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.compact-form input:focus,
+.compact-form textarea:focus,
+.compact-form select:focus {
+    border-color: #046c58;
+    outline: none;
+}
+
+/* Кнопки */
+.compact-form .btn {
+    background: #046c58;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.compact-form .btn:hover {
+    background-color: #034c3e;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #046c58;
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.back-link:hover {
+    background: #333;
+    color: #fff;
+}
+.cont{
+   padding-top:50px;
+   margin-bottom:50px;
+}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Home page {% endblock %}
+{% block content %}
+<section class="center-section">
+    <div class="shape"></div>
+            <div class="square"></div>
+        <div class="trapezoid"></div>
+        <h1>Создайте пост</h1>
+        <p>Здесь вы можете поделиться своими мыслями, идеями или любыми материалами связанными с играми и их разработкой. Нажмите на кнопку, чтобы начать!</p>
+    <a href="{% url 'post_list' %}" class="btn">Наши посты</a>
+</section>
+{% endblock %}

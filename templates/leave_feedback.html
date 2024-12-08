@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Home page {% endblock %}
+{% block content %}
+
+<section class="center-section">
+    <div class="shape"></div>
+    <h1>Оставить отзыв</h1>
+    <p>Заполните форму ниже, чтобы отправить ваш отзыв!</p>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+
+
+    <a href="{% url 'post_list' %}" class="btn back-link">Назад</a>
+    <div class="square"></div>
+</section>
+
+{% endblock %}
