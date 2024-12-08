@@ -10,7 +10,7 @@
             <img src="{{ post.image.url }}" alt="{{ post.title }}" style="max-width: 300px;">
             {% endif %}
             <p>{{ post.content|slice:200 }}...</p>
-            <a href="{% url 'post_detail' post.id %}">Читать далее</a>
+            <a href="{% url 'post_detail' post.id %}" class="btn">Читать далее</a>
 
         {% endfor %}
         </div>

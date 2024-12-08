@@ -6,13 +6,13 @@
 <h1>Отзывы</h1>
     <ul>
         {% for feedback in feedbacks %}
-        <li>
-            <h3>{{ feedback.full_name }}:</h3>
+            <p><strong>{{ feedback.full_name }}:</strong></p>
+            <p>{{ feedback.email}}</p>
             <p>{{ feedback.review_text }}</p>
-        </li>
+            <hr>
         {% endfor %}
     </ul>
-    <a class="nav-link" href="{% url 'leave_feedback' %}" class="btn">Оставить отзыв</a>
-    <a href="{% url 'home' %}">На главную</a>
+    <a href="{% url 'leave_feedback' %}" class="btn">Оставить отзыв</a>
+    <a href="{% url 'home' %}" class="btn">На главную</a>
 </div>
 {% endblock %}

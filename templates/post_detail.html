@@ -8,6 +8,6 @@
     <img src="{{ post.image.url }}" alt="{{ post.title }}" style="max-width: 600px;">
     {% endif %}
     <p>{{ post.content }}</p>
-    <a href="{% url 'post_list'%}">Назад к списку постов</a>
+    <a href="{% url 'post_list'%}" class="btn">Назад к списку постов</a>
 </section>
 {% endblock %}
